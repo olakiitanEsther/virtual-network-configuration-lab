@@ -60,8 +60,9 @@ To initialize verification, system interfaces were updated to clear default DHCP
 #### Windows Client Interface Baseline Metrics:
 ![Windows Interface Configuration Verification](Showing%20the%20successful%20IP%20addresses%20(ipconfig)%20WINDOW.jpeg)
 
-#### Ubuntu Server Interface Baseline Metrics:
-![Ubuntu Server Interface Configuration Verification](Showing%20the%20successful%20IP%20addresses%20(%20ipaddr)%20UBUNTU.jpeg)
+#### Ubuntu Server Interface Baseline Metric
+![Ubuntu Server Interface Configuration Verification](Showing%20the%20successful%20IP%20addresses%20(%20ip%20addr)%20UBUNTU.jpeg)
+
 
 
 
@@ -82,7 +83,9 @@ Bidirectional packet delivery loops were initiated across the virtual broadcast 
 To evaluate architectural failure boundaries, the Windows client address configuration was intentionally shifted out of bounds to an alternative logical range (`10.0.0.10`). Re-executing connectivity validation metrics immediately returned a shell termination string showing `PING: transmit failed. General failure` with **100% loss metrics**. This systematically proved that without an active structural layer-3 router device present within the virtual hypervisor engine, components residing outside the identical logical network mask boundaries are completely incapable of locating target routing paths.
 
 #### Network Disconnection Boundary Proof:
-![Failed Network Subnet Boundary Ping](Showing%20the%20failed%20ping%20window%20100%%20loss).jpeg)
+![Failed Network Subnet Boundary Ping](failed_ping.jpeg)
+
+
 
 
 ---

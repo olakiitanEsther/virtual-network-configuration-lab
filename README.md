@@ -1,5 +1,3 @@
-# virtual-network-configuration-lab
- Building an isolated virtual private network using Oracle VirtualBox, Windows 10, and Ubuntu Server CLI to test bidirectional connectivity.
 # Building an Isolated Virtual Private Network (VirtualBox Lab)
 
 ## Project Overview
@@ -60,10 +58,12 @@ This project demonstrates the manual architecture, deployment, and validation of
 To initialize verification, system interfaces were updated to clear default DHCP states. Local system architecture layouts were validated using native shell tools (`ipconfig /all` on Windows and `ip addr` on Linux).
 
 #### Windows Client Interface Baseline Metrics:
-![Windows Interface Configuration Verification](screenshot1_windows_ip.png)
+![Windows Interface Configuration Verification](Showing%20the%20successful%20IP%20addresses%20(ipconfig)%20WINDOW.jpeg)
 
 #### Ubuntu Server Interface Baseline Metrics:
-![Ubuntu Server Interface Configuration Verification](screenshot2_ubuntu_ip.png)
+![Ubuntu Server Interface Configuration Verification](Showing%20the%20successful%20IP%20addresses%20(%20ipaddr)%20UBUNTU.jpeg)
+
+
 
 ---
 
@@ -71,7 +71,10 @@ To initialize verification, system interfaces were updated to clear default DHCP
 Bidirectional packet delivery loops were initiated across the virtual broadcast medium. Once firewall layers were cleared, execution commands targeting `ping 192.168.1.10` from Ubuntu and `ping 192.168.1.20` from Windows returned stable response metrics displaying **0% packet loss values**.
 
 #### Bidirectional ICMP Connectivity Verification:
-![Successful Network Connectivity Ping Loop](screenshot3_successful_ping.png)
+![Successful Network Connectivity Ping Loop - Ubuntu](UBUNTU-Showing%20the%20successful%20ping%20loop%20response.jpeg)
+
+![Successful Network Connectivity Ping Loop - Windows](WINDOW%20-Showing%20the%20successful%20ping%20loop%20response.jpeg)
+
 
 ---
 
@@ -79,7 +82,8 @@ Bidirectional packet delivery loops were initiated across the virtual broadcast 
 To evaluate architectural failure boundaries, the Windows client address configuration was intentionally shifted out of bounds to an alternative logical range (`10.0.0.10`). Re-executing connectivity validation metrics immediately returned a shell termination string showing `PING: transmit failed. General failure` with **100% loss metrics**. This systematically proved that without an active structural layer-3 router device present within the virtual hypervisor engine, components residing outside the identical logical network mask boundaries are completely incapable of locating target routing paths.
 
 #### Network Disconnection Boundary Proof:
-![Failed Network Subnet Boundary Ping](screenshot4_failed_ping.png)
+![Failed Network Subnet Boundary Ping](Showing%20the%20failed%20ping%20window%20100%%20loss).jpeg)
+
 
 ---
 
@@ -87,7 +91,7 @@ To evaluate architectural failure boundaries, the Windows client address configu
 The structural network settings grid table was recorded inside Excel to formalize validation data profiles.
 
 #### Final Data Record & Troubleshooting Analysis Grid Report:
-![Final Excel Report Log](excel_report.png)
+[📊 Click Here to View/Download Completed Excel Documentation Matrix (Practical_Task_1_Network.xlsx)](Practical_Task_1_Network.xlsx)
 
 ---
 

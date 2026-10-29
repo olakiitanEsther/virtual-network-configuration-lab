@@ -83,7 +83,8 @@ Bidirectional packet delivery loops were initiated across the virtual broadcast 
 To evaluate architectural failure boundaries, the Windows client address configuration was intentionally shifted out of bounds to an alternative logical range (`10.0.0.10`). Re-executing connectivity validation metrics immediately returned a shell termination string showing `PING: transmit failed. General failure` with **100% loss metrics**. This systematically proved that without an active structural layer-3 router device present within the virtual hypervisor engine, components residing outside the identical logical network mask boundaries are completely incapable of locating target routing paths.
 
 #### Network Disconnection Boundary Proof:
-![Failed Network Subnet Boundary Ping](failed_ping.jpeg)
+<img width="1170" height="653" alt="Showing the failed ping window 100% loss)" src="https://github.com/user-attachments/assets/83d1e71f-2b97-44e8-b9d1-7516e522e78e" />
+
 
 
 
@@ -104,3 +105,13 @@ The structural network settings grid table was recorded inside Excel to formaliz
 * Static IPv4 Network Addressing Schemes & Subnetting Logic
 * Operating System Firewall Profiling & Interface Debugging
 * Basic Networking Diagnostics (`ping`, `ipconfig`, `ip addr`)
+
+---
+
+## Author
+
+**OLAKIITAN ESTHER**  
+*Cybersecurity INTERN*  
+
+https://www.linkedin.com/in/olagunju-olakiitan/
+

@@ -110,7 +110,7 @@ The structural network settings grid table was recorded inside Excel to formaliz
 
 ## Author
 
-**OLAKIITAN ESTHER**  
+**OLAGUNJU OLAKIITAN ESTHER**  
 *Cybersecurity INTERN*  
 
 https://www.linkedin.com/in/olagunju-olakiitan/
